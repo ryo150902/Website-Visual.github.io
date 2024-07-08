@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+    .recent-orders {
+        text-align: center;
+        margin-top: 750px; /* Sesuaikan dengan jumlah margin atas yang diinginkan */
+    }
+
+    .recent-orders h1 {
+        font-size: 2.5em;
+        margin-top: 250px; /* Sesuaikan dengan jumlah margin atas yang diinginkan */
+    }
+    .recent-orders h1 span{
+        color : green;
+    }
+    .recent-orders h3{
+        font-size : 1.5rem;
+        margin-top: 100px;
+    }
+    .katalog-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .keranjang-belanja {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        .cart-icon-wrapper  {
+            position: relative;
+            display: inline-block;
+        }
+        .cart-icon-wrapper .bx-shopping-bag {
+            font-size: 2em; /* Ukuran ikon yang diperbesar */
+            transition: transform 0.3s ease; /* Transisi smooth saat diperbesar */
+        }
+
+       .cart-icon-wrapper:hover .bx-shopping-bag {
+            transform: scale(1.2); /* Memperbesar ikon saat kursor di atasnya */
+        }
+
+        .cart-item-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.8rem
+        }
+
+    /* Aturan CSS lainnya tetap sama */
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/css.css">
+    <title>Ecommerce Website - Shoping.ID</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="foto/pra.png">
+                    <h2><span class="danger">COLLECTION</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="home.html">
+                    <span class="material-icons-sharp">
+                        home
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <a href="clothes.html">
+                    <span class="material-icons-sharp">
+                        checkroom
+                    </span>
+                    <h3>Baju & Jaket</h3>
+                </a>
+                <a href="tas.html">
+                    <span class="material-icons-sharp">
+                       backpack
+                    </span>
+                    <h3>Tas Pria & Wanita</h3>
+                </a>
+                <a href="log.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <div class="recent-orders">
+                <h2 class="">TAS PRIA & WANITA</h2>
+            </div>
+            <div class="recent-orders">
+                <div class="katalog">
+                    <div class="katalog-item">
+                        <img src="foto/backpack.jpg" alt="BACKPACK PRIA">
+                        <h4>BACKPACK PRIA</h4>
+                        <p>Rp 220,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/backpack wanita.png" alt="BACKPACK WANITA">
+                        <h4>BACKPACK PEREMPUAN</h4>
+                        <p>Rp 320,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/totebag wanita.png" alt="TOTEBAG WANITA">
+                        <h4>TOTEBAG</h4>
+                        <p>Rp 320,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/totebag.jpg" alt="TOTEBAG">
+                        <h4>TOTEBAG</h4>
+                        <p>Rp 320,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/backpack2.jpg" alt="BACKPACK PRIA">
+                        <h4>T-Shirt Polos</h4>
+                        <p>Rp. 75.000</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/backpack3.jpg" alt="BACKPACK PRIA">
+                        <h4>JACKET VARSITY</h4>
+                        <p>Rp 350,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/tasSelempang.jpg" alt="TAS SELEMPANG">
+                        <h4>JACKET KULIT</h4>
+                        <p>Rp 250,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/tasSelempang2.jpg" alt="TAS SELEMPANG">
+                        <h4>JACKET KULIT </h4>
+                        <p>Rp 420,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                    <div class="katalog-item">
+                        <img src="foto/tasSelempang3.jpg" alt="TAS SELEMPANG">
+                        <h4>JACKET KULIT </h4>
+                        <p>Rp 420,000.00</p>
+                        <button>BELI</button>
+                        <button class="tambah-ke-keranjang">KERANJANG</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <a href="admin.html" class="cart-icon-wrapper">
+                    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                    <span id="cart-item-count" class="cart-item-count">0</span>
+                    <div class="keranjang-belanja" id="keranjang-belanja">
+                        <h3>Keranjang Belanja</h3>
+                        <ul id="item-keranjang">
+                            <!-- Item keranjang akan ditambahkan di sini -->
+                        </ul>
+                    </div>
+                </a>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="foto/pra.jpg">
+                    <h2>ARYA.<span>ID</span></h2>
+                    <p>Toko Terpercaya</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Jadwal Operasional</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Jam Kerja</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Jam Kerja</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="beli.js"></script>
+    <script src="gelap-terang.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYA.ID</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-left">
+            <div class="login-header">
+                <h1>Selamat Datang Di Website</h1>
+                <p>Silahkan login akun anda</p>
+            </div>
+            <form class="login-form" method="get" action="home.html">
+                <div class="login-form-content">
+                    <div class="form-item">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email" required placeholder="Masukan Email">
+                    </div>
+                    <div class="form-item">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required placeholder="Masukan Password">
+                    </div>
+                    <div class="form-item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="rememberMeCheckbox" checked>
+                            <label for="rememberMeCheckbox" class="checkboxLabel">Ingat saya</label>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit">Sign in</button>
+                    <a href="register.php">
+                        <h3>Register</h3>
+                    </a>
+                </div>
+                <div class="login-form-footer">
+                    
+                </div>
+            </form>
+        </div>
+        <div class="login-right">
+            <img src="foto/pra.png" alt="Image description">
+        </div>
+    </div>
+</body>
+</html>
