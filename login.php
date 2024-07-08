@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
                </h2> 
                 <p>silahkan login akun anda</p>
             </div>
-            <form class="login-form" method="post" action="">
+            <form class="login-form" method="get" action="">
                 <div class="login-form-content">
                     <div class="form-item">
                         <label for="email">EMAIL</label>
