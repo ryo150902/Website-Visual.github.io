@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYA.ID - Register</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-left">
+            <div class="register-header">
+                <h1>Daftar Akun Baru</h1>
+                <p>Silahkan isi form berikut untuk mendaftar</p>
+            </div>
+            <form class="register-form" method="get" action="log.html">
+                <div class="register-form-content">
+                    <div class="form-item">
+                        <label for="fullname">NAMA LENGKAP</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" required placeholder="Masukan Nama Lengkap">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">EMAIL</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Masukan Email">
+                    </div>
+                    <div class="form-item">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" class="form-control" id="password" name="password" required placeholder="Masukan Password">
+                    </div>
+                    <div class="form-item">
+                        <label for="confirm_password">KONFIRMASI PASSWORD</label>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" required placeholder="Konfirmasi Password">
+                    </div>
+                    <div class="form-item">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheckbox" required>
+                            <label for="termsCheckbox" class="form-check-label">Saya setuju dengan syarat dan ketentuan</label>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary">Register</button>
+                    <a href="log.html">
+                        <h3>Login</h3>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="register-right">
+            <img src="foto/pra.png" alt="Image description">
+        </div>
+    </div>
+</body>
+</html>

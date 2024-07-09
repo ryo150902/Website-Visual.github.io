@@ -1,0 +1,75 @@
+/* General container styling */
+body {
+    background-color: #007bff; /* Warna latar belakang biru */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styling */
+.card {
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.card-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.card-header p {
+    margin-bottom: 0;
+}
+
+/* Form item styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Checkbox styling */
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 0.5rem;
+}
+
+/* Button styling */
+.btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0056b3; /* Warna tombol sedikit lebih gelap */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #003f7f;
+}
+
+/* Link styling */
+a h3 {
+    text-align: center;
+    color: #0056b3; /* Warna tautan */
+    margin-top: 1rem;
+}
+
+a h3:hover {
+    text-decoration: underline;
+}
